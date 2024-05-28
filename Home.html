@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefLib</title>
+    <link rel="stylesheet" href="Home.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 1rem;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#recipe">Recipe</a>
+    </div>
+
+    <div id="home">
+        <div class="featured-design">
+            <!--below is yung carousel-->
+            <div class="carousel">
+                <div class="img_box">
+                    <img src="images/Caldereta.jpg" class="slider-img">
+                </div>
+            </div>
+            <button class="btn" id="prev" onclick="prev()"><svg class="arr" height="60px" width="60px" fill="#030104" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve">
+                    <g>
+                        <g id="move_x5F_horizontal">
+                            <g>
+                                <polygon points="12,18 6,18 6,22 0,16 6,10 6,14 12,14"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+            <button class="btn" id="next" onclick="next()"><svg class="arr" height="60px" width="60px" fill="#030104" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve">
+                    <g>
+                        <g id="move_x5F_horizontal">
+                            <g>
+                                <polygon points="20,14 26,14 26,10 32,16 26,22 26,18 20,18"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+        <div id="about">
+            <h1>About Us</h1>
+            <p>Welcome to our website, your ultimate destination for discovering a wide array of authentic and delicious Filipino recipes. Our platform is dedicated to showcasing the rich and diverse culinary heritage of the Philippines, providing an extensive collection of recipes that cater to both traditional and modern tastes.</p>
+            <p>Our mission is to assist individuals who may not have extensive cooking experience by offering clear, easy-to-follow recipes that simplify the culinary process and make it accessible to everyone. We believe that cooking should be a joyful and rewarding experience, and we strive to make it easier for you to create mouth-watering dishes right in your own kitchen.</p>
+            <p>Whether you're a beginner just starting your culinary journey or an experienced cook looking to expand your repertoire, our website is designed to be a valuable resource. You'll find detailed step-by-step instructions, practical tips, and essential techniques that will help you prepare a variety of Filipino dishes with confidence and ease.</p>
+            <p>We are passionate about sharing the flavors of Filipino cuisine and fostering a community of food enthusiasts. We encourage our users to share their own cooking experiences and favorite recipes, creating a supportive and inspiring environment for all.</p>
+            <p>Join us as we explore the vibrant world of Filipino cooking and bring the delicious taste of the Philippines into your home. Happy cooking!</p>
+        </div>
+
+        <h2>Featured Recipes</h2>
+    </div>
+
+    <div id="recipe">
+        <div class="des">
+            <p class="sug">Filipino Cuisine</p>
+            <p class="desDesc">Filipino cuisine is a unique mix of flavors and influences. It's known for being both savory and sour, with dishes like adobo and sinigang. Expect rice as a staple, and meat, seafood, and vegetables playing a big role in most meals.</p>
+        </div>
+        <div class="port">
+            <div class="portPart">
+                <p>Famous Main Course</p>
+                <div class="add"><a href="index.html"><button>Try recipe</button></a></div>
+            </div>
+            <div class="portPart">
+                <p>Pastry</p>
+                <div class="add"><a href="index1.html"><button>Try recipe</button></a></div>
+            </div>
+            <div class="portPart">
+                <p>Sticky Rice Specials</p>
+                <div class="add"><a href="index3.html"><button>Try recipe</button></a></div>
+            </div>
+            <div class="portPart">
+                <p>Famous Desserts Recipes</p>
+                <div class="add"><a href="index4.html"><button>Try recipe</button></a></div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2024 ChefLib. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/johnleo.baticolon"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="Home.js"></script>
+</body>
+</html>
